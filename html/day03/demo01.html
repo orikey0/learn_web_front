@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/fontawesome.min.css">
+    <style>
+    .box1{
+        width: 400px;
+        height: 300px;
+        
+        border: 2px solid rgb(39, 30, 30);
+    }
+    .box2{
+        width: 400px;
+        height: 400px;
+        position: relative;
+        left: 300px;
+        top: 100px;
+        border: 1px solid #000;
+        
+    }
+    .box1>div,.box2>div{
+        width:98px;
+        height: 98px;
+        border: 1px solid #000;
+        border-radius: 50%;
+        background-color: green;
+        float:left;
+        text-align: center;
+        line-height: 98px;
+    }
+    </style>
+</head>
+<body>
+    <!-- <div class="box1">
+        <div draggable="true">1</div>
+        <div draggable="true">2</div>
+        <div draggable="true">3</div>
+        <div draggable="true">4</div>
+        <div draggable="true">5</div>
+        <div draggable="true">6</div>
+        <div draggable="true">7</div>
+        <div draggable="true">8</div>
+    </div>
+    <div class="box2"></div> -->
+    <script>
+        // var box = document.querySelector('.box1');
+        // var box2 = document.querySelector('.box2');
+        // box.ondragstart=function(){
+        //     console.log('拖拽开始');
+        // }
+        // box.ondragleave=function(){
+        //     console.log('拖拽离开');
+        // }
+        // box.ondragend=function(){
+        //     console.log('拖拽结束');
+        //     console.log("------------");
+        // }
+        
+        // box.ondrag=function(){
+        //     console.log('拖拽');
+        // }
+
+        // box2.ondragenter=function(){
+        //     console.log("来了");
+        // }
+        // box2.ondragleave=function(){
+        //     console.log("离开了")
+        // }
+        // box2.ondragover = function(e){
+        //     event.preventDefault()
+        //     e.preventDefault();
+        //     console.log("over...");
+        // }
+        // box2.ondrop=function(){
+        //     console.log("松开鼠标了");
+        // }
+        // window.history;
+        // var boxs = document.querySelectorAll('.box1 div');
+        // var box2 = document.querySelector('.box2');
+        // var temp = null;
+        // for(var i = 0;i<boxs.length;i++){
+        //     boxs[i].ondragstart=function(){
+        //         temp=this;
+        //         console.log(temp);
+        //     }
+        //     boxs[i].ondragend=function(){
+        //         temp = null;
+        //         console.log(temp);
+        //     }
+        // }
+        // box2.ondragover=function(e){
+        //     e.preventDefault();
+        // }
+        // box2.ondrop=function(){
+        //     this.appendChild(temp);
+        // }
+
+        // if(navigator.geolocation){
+        //     navigator.geolocation.getCurrentPosition(successCallback,errorCallback);
+        // }else{
+        //     console.log("您的浏览器不支持地理定位");
+        // }
+        // function successCallback(position){
+        //     var wd = position.coords.latitude;
+        //     var jd = position.coords.longitude;
+        //     console.log("获取用户位置成功！");
+        //     console.log(wd+'------------'+jd);
+        // }
+        // function errorCallback(error){
+        //     console.log(error);
+        //     console.log('获取用户位置失败');
+        // }
+
+    </script>
+</body>
+</html>
